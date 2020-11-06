@@ -1,0 +1,120 @@
+{
+  "resourceType": "Patient",
+  "id": "567043",
+  "meta": {
+      "versionId": "1",
+      "lastUpdated": "2020-11-01T19:37:59.507-05:00"
+  },
+  "extension": [
+      {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+          "valueCodeableConcept": {
+              "coding": [
+                  {
+                      "system": "http://hl7.org/fhir/v3/Race",
+                      "code": "2106-3",
+                      "display": "White"
+                  }
+              ],
+              "text": "race"
+          }
+      },
+      {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+          "valueCodeableConcept": {
+              "coding": [
+                  {
+                      "system": "http://hl7.org/fhir/v3/Ethnicity",
+                      "code": "2186-5",
+                      "display": "Nonhispanic"
+                  }
+              ],
+              "text": "ethnicity"
+          }
+      },
+      {
+          "url": "http://hl7.org/fhir/StructureDefinition/birthPlace",
+          "valueAddress": {
+              "city": "Kansas City",
+              "state": "MO",
+              "country": "US"
+          }
+      },
+      {
+          "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+          "valueString": "Code Conference"
+      },
+      {
+          "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+          "valueCode": "M"
+      },
+      {
+          "url": "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired",
+          "valueBoolean": false
+      }
+  ],
+  "identifier": [
+      {
+          "system": "https://github.com/jfewins/cds-services-example",
+          "value": "1507926"
+      }
+  ],
+  "name": [
+      {
+          "use": "official",
+          "family": [
+              "Code"
+          ],
+          "given": [
+              "Learning"
+          ],
+          "prefix": [
+              "Mr."
+          ]
+      }
+  ],
+  "telecom": [
+      {
+          "system": "phone",
+          "value": "956.787.2115 x89650",
+          "use": "home"
+      }
+  ],
+  "gender": "male",
+  "birthDate": "1935-06-09",
+  "address": [
+      {
+          "line": [
+              "10953 Emmerich Glen",
+              "Apt. 459"
+          ],
+          "city": "Kansas City",
+          "state": "MO",
+          "postalCode": "01203",
+          "country": "US"
+      }
+  ],
+  "maritalStatus": {
+      "coding": [
+          {
+              "system": "http://hl7.org/fhir/v3/MaritalStatus",
+              "code": "M"
+          }
+      ],
+      "text": "M"
+  },
+  "multipleBirthBoolean": false,
+  "communication": [
+      {
+          "language": {
+              "coding": [
+                  {
+                      "system": "http://hl7.org/fhir/ValueSet/languages",
+                      "code": "en-US",
+                      "display": "English (United States)"
+                  }
+              ]
+          }
+      }
+  ]
+}
